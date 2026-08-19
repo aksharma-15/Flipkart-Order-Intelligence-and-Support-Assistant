@@ -85,7 +85,7 @@ Instead of collecting more data, we should implement a **category-specific decis
 
 ## 7. Saved Artifacts
 The tuned Random Forest pipeline (including preprocessing) has been persisted.
-* **Model Path:** `models/return_risk_model.pkl` (loads without error via `joblib`).
+* **Model Path:** [models/return_risk_model.pkl](models) (loads without error via `joblib`).
 * **Random Forest Optimal Threshold (`t*_rf`):** A secondary threshold sweep specifically on the Random Forest's `predict_proba` output determined that the F1-maximising threshold is **`t*_rf` = 0.44** (achieving a Max F1 of 0.4110). This specific value is what the LangGraph agent in Part 3 will use to anchor its return-risk buckets.
 
 
