@@ -7,6 +7,7 @@ IITP Capstone project
 This section outlines the data verification, preprocessing, modeling, and evaluation steps for the return-risk scoring model, as executed in `part1_return_risk.ipynb`.
 
 ## 1. Dataset Verification
+* The dataset is generated from the provided [generate_orders](src/generate_orders.py) file.
 * **Data Dimensions:** The generated `orders_dataset.csv` contains exactly 6,000 rows and 13 columns.
 * **Overall Return Rate:** The dataset exhibits an overall return rate of **22.75%**.
 * **Missing Data:** The `rating_given` column is missing in 783 rows, which accounts for **13.05%** of the data. 
@@ -41,6 +42,7 @@ A Logistic Regression model (with `class_weight="balanced"`) was trained on the 
 Lowering the threshold to 0.42 successfully increases recall (catching more real returns before they happen) at the expense of precision (generating more false alarms). In a business context, this threshold represents the sweet spot between spending too much money on unnecessary interventions (e.g., calling customers, holding shipments due to false positives) and wasting money on reverse-logistics fees and damaged inventory from unprevented returns (False Negatives).
 
 ## 4. Random Forest Tuning & Evaluation
+* The model can accessed here: [return_risk_model](models/return_risk_model.pkl)
 A `RandomForestClassifier` was tuned using `GridSearchCV` over 5-fold StratifiedKFold cross-validation.
 * **Best Parameters:** `n_estimators` = 200, `max_depth` = 6
 * **Cross-Validated ROC-AUC:** 0.6152
@@ -91,6 +93,8 @@ The tuned Random Forest pipeline (including preprocessing) has been persisted.
 
 
 # Part 2: Product Image Categoriser
+
+The trained image classifier can be accessed here: [product_classifier](models/product_classifier.pt)
 
 ### Dataset & Training Pipeline
 * **Dataset:** Fashion-MNIST (Zalando Research).
@@ -157,3 +161,6 @@ def load_and_predict(image_path, model_path="models/product_classifier.pt"):
         
     return {"predicted_category": class_names[pred.item()], "confidence": round(conf.item(), 4)}
 ```
+
+---
+
