@@ -1,0 +1,12 @@
+=== Task 9(d): Fresh Conversation (State Reset) ===
+Scenario ID: transcript_06_fresh_conversation
+
+Turn 1 User: Can you check the risk for the previous order?
+Agent Structured Response:
+{
+  "answer": "The predicted return risk for order UNKNOWN is Medium.",
+  "source": "return_risk_tool",
+  "confidence": 0.9
+}
+Active Memory State: {"last_intent": "risk"}
+--------------------------------------------------

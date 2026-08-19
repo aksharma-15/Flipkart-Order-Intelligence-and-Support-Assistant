@@ -1,0 +1,12 @@
+=== Task 9(a): Policy Question 1 (Electronics) ===
+Scenario ID: transcript_01_policy_electronics
+
+Turn 1 User: What is the return policy window for electronic devices?
+Agent Structured Response:
+{
+  "answer": "Electronics have a 7-day return window. Devices must be unactivated.",
+  "source": "policy_kb",
+  "confidence": 0.95
+}
+Active Memory State: {"last_intent": "policy"}
+--------------------------------------------------

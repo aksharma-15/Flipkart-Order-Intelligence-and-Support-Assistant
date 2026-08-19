@@ -1,0 +1,12 @@
+=== Additional: Policy Question ===
+Scenario ID: transcript_09_policy_cod_refund
+
+Turn 1 User: What is the timeline for receiving a cash on delivery refund?
+Agent Structured Response:
+{
+  "answer": "COD refund timelines are 5-7 business days after reverse pickup.",
+  "source": "policy_kb",
+  "confidence": 0.95
+}
+Active Memory State: {"last_intent": "policy"}
+--------------------------------------------------

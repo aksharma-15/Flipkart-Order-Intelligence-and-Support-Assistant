@@ -1,0 +1,21 @@
+=== Task 9(d): Multi-Turn Exchange (Context Preserved) ===
+Scenario ID: transcript_05_multiturn_state
+
+Turn 1 User: I have an inquiry regarding order 10423.
+Agent Structured Response:
+{
+  "answer": "Refused to answer: No grounded policy found. Similarity Distance: 1.48 > Threshold: 1.20",
+  "source": "policy_kb",
+  "confidence": 0.0
+}
+Active Memory State: {"order_id": "10423", "last_intent": "policy"}
+--------------------------------------------------
+Turn 2 User: Can you evaluate the return risk for this order?
+Agent Structured Response:
+{
+  "answer": "The predicted return risk for order 10423 is Medium.",
+  "source": "return_risk_tool",
+  "confidence": 0.9
+}
+Active Memory State: {"order_id": "10423", "last_intent": "risk"}
+--------------------------------------------------

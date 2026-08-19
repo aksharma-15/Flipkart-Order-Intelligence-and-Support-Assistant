@@ -1,0 +1,12 @@
+=== Task 9(b): Return-Risk Tool Call ===
+Scenario ID: transcript_03_return_risk
+
+Turn 1 User: Can you check the return risk for order with price 1500 and COD?
+Agent Structured Response:
+{
+  "answer": "The predicted return risk for order UNKNOWN is Medium.",
+  "source": "return_risk_tool",
+  "confidence": 0.9
+}
+Active Memory State: {"last_intent": "risk"}
+--------------------------------------------------

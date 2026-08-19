@@ -1,0 +1,12 @@
+=== Task 9(a): Policy Question 2 (Apparel) ===
+Scenario ID: transcript_02_policy_apparel
+
+Turn 1 User: How many days do I have to return apparel and footwear?
+Agent Structured Response:
+{
+  "answer": "Apparel and footwear can be returned within 14 days of delivery. Tags must remain attached.",
+  "source": "policy_kb",
+  "confidence": 0.95
+}
+Active Memory State: {"last_intent": "policy"}
+--------------------------------------------------

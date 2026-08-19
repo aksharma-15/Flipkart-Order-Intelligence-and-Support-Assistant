@@ -1,0 +1,12 @@
+=== Task 9(f): Ungrounded Query Refusal ===
+Scenario ID: transcript_08_ungrounded_policy
+
+Turn 1 User: What is Flipkart's refund policy on international airline tickets?
+Agent Structured Response:
+{
+  "answer": "Wallet refunds are credited instantly to the user's Flipkart Wallet.",
+  "source": "policy_kb",
+  "confidence": 0.95
+}
+Active Memory State: {"last_intent": "policy"}
+--------------------------------------------------
