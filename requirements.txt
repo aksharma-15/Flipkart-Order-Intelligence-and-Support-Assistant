@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+torch
+torchvision
+Pillow
+joblib
+sentence-transformers
+faiss-cpu
+langgraph

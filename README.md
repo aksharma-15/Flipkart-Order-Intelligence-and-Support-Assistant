@@ -266,3 +266,18 @@ The retrieval system uses a document-level evaluation strategy. Queries retrieve
 **Overall Metrics:**
 * **Average Precision@3**: 0.33
 * **Average Recall@3**: 1.00
+
+
+---
+
+## Installation instructions
+
+* If you are running this in a Jupyter Notebook or Google Colab environment, you can install these directly by placing the requirements.txt file in your directory and running:
+```
+!pip install -r requirements.txt
+```
+
+* Alternatively, you can install them in a single inline command:
+```
+!pip install pandas numpy scikit-learn matplotlib seaborn torch torchvision Pillow joblib sentence-transformers faiss-cpu langgraph
+```
